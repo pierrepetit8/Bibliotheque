@@ -13,8 +13,9 @@
             </extension>
         </buildExtensions>
         <data xmlns="http://www.netbeans.org/ns/j2se-project/3">
-            <name>Bibliotheque</name>
+            <name>GestionLivres</name>
             <source-roots>
+                <root id="src.ressource.dir"/>
                 <root id="src.dir"/>
             </source-roots>
             <test-roots>
