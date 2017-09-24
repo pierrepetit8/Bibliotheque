@@ -19,10 +19,8 @@ public class Livre {
 
     @Override
     public String toString() {
-        return String.format("Le nom du livre est %s et l'auteur est %s (%s)", nom, auteur, nbPage.asString());
+        return String.format("Le nom du livre est %s et l'auteur est %s (%s)", name, auteur, nbPage.asString());
     }
-    public String auteur;
-    public String nom;
 
 
    
@@ -36,9 +34,11 @@ public class Livre {
         return name;
     }
     
+    private StringProperty auteur = new SimpleStringProperty();
+    
     public Livre(String auteur, String nom) {
-        this.nom = nom;
-        this.auteur = auteur;
+        this.name = new SimpleStringProperty(nom);
+        this.auteur = new SimpleStringProperty(auteur);
 
     }
     
